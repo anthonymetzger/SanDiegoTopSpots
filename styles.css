@@ -1,0 +1,121 @@
+
+
+/* Readable table styles */
+.readable-table {
+    width: 100%;
+    
+    border-spacing: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    background: #fff;
+}
+
+/* Optional responsive wrapper: use as <div class="table-wrap"> around the table */
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Cells */
+.readable-table th,
+.readable-table td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #e6eaf0;
+}
+
+/* Header styling and sticky header support */
+.readable-table thead th {
+    background: linear-gradient(180deg, #f6f9fc, #f2f6fa);
+    color: #0f1720;
+    font-weight: 600;
+    font-size: 0.95rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.02);
+}
+
+/* Zebra striping for rows */
+.readable-table tbody tr:nth-child(even) {
+    background-color: #fbfdff;
+}
+
+/* Hover and keyboard focus states for better scanning */
+.readable-table tbody tr:hover,
+.readable-table tbody tr:focus-within {
+    background-color: #f1f8ff;
+    outline: none;
+    transition: background-color 120ms ease;
+}
+
+/* Allow long content to wrap */
+.readable-table td {
+    white-space: normal;
+    
+}
+
+/* Caption styling */
+.readable-table caption {
+    caption-side: top;
+    text-align: left;
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+    color: #1f2d3d;
+}
+
+/* Compact variant for dense tables */
+.readable-table.compact th,
+.readable-table.compact td {
+    padding: 0.35rem 0.5rem;
+    font-size: 13px;
+}
+
+.background {
+    background-image: url('assets/SandyEggo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.readable-table {
+    opacity: 94.5%;
+    border-collapse: collapse; /* Important for clean rounded corners */
+    width: 100%;
+    border-radius: 10px; /* Adjust the value for desired roundness */
+    overflow: hidden; /* Ensures content respects the rounded corners */
+    
+}
+
+.top {
+    font: bold 0.9em Georgia, Montserrat, serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 75px;
+    text-align: center;
+}
+
+.link-to-button{
+    
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.link-column {
+    white-space: nowrap;
+    word-break: keep-all;
+    
+    margin-top: 20px;
+}
+
+.button-column {
+    margin-top: 20px;
+}
+
